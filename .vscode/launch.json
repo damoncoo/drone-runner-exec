@@ -10,10 +10,15 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}/main.go",
-            "env": {},
+            "env": {
+                // "http_proxy" : "http://127.0.0.1:9090",
+                // "https_proxy" : "http://127.0.0.1:9090",
+            },
             "args": [
                 "service",
-                "install"
+                "run",
+                "--config",
+                "/Users/cxy/.drone-runner-exec/config"
             ]
         }
     ]
